@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQ"
+    android:orientation="vertical"
+    android:background="@drawable/background_gr">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:textColor="#eaf5fd"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cum se utilizează aplicația?"
+        android:textColor="#eaf5fd"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/faguide"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raportează o eroare"
+        android:textColor="#eaf5fd"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/erorForm"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       <EditText
+           android:layout_width="match_parent"
+           android:hint="E-mail"
+           android:singleLine="true"
+           android:inputType="textEmailAddress"
+           android:textColor="#eaf5fd"
+           android:textColorHint="#5EEAF5FD"
+           android:layout_marginStart="30dp"
+           android:layout_marginEnd="30dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/emailform"
+           android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Mesaj"
+            android:inputType="textLongMessage"
+            android:textColor="#eaf5fd"
+            android:textColorHint="#5EEAF5FD"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textform"
+            android:gravity="top"
+            android:layout_height="150dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trimite"
+            android:id="@+id/send"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

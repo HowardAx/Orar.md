@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CloseScheduleActivity"
+    android:background="@drawable/background_gr"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleinfo"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:text="Denumirea stației"
+        android:textColor="#ffffff"
+        android:maxLines="1"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_trolleybus"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:id="@+id/trol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_marginTop="50dp"
+                android:textSize="17sp"
+                android:layout_marginStart="30dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bus"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="33, 44, 49"
+                android:layout_marginTop="55dp"
+                android:textSize="17sp"
+                android:layout_marginStart="30dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_transportation"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/micro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="157, 166, 173, 184, 188"
+                android:layout_marginTop="45dp"
+
+                android:layout_marginEnd="5dp"
+                android:textSize="17sp"
+                android:layout_marginStart="25dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
